@@ -1,24 +1,66 @@
 .container{
     width: 100vw;
     height: 100vh; 
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 *{
     margin: 0;
     padding: 0;
+    font-family: Inter;
 }
+
 .header
 {
     width: 100%;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     gap: 33px;
     align-items: center;
     justify-content: center;
+    background-color: #40E0D0;
+    padding: 10px;
 }
 .h1stampa{
     font-weight: bold;
-    font-family: Inter;
+    color: #273341;
     
+}
+
+.skillscontainer
+{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.btn{
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #273341;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: 0.3s ;
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn:hover{
+    box-shadow: 5px 5px 0px #40E0D0;
+    opacity: 0.9;
 }
